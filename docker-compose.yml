@@ -1,0 +1,51 @@
+# version: '3.8'
+services:
+  mypage-nginx:
+    container_name: "mypage-nginx"
+    build:
+      context: ./docker/nginx
+    depends_on:
+      - mypage-app
+    ports:
+      - 8070:80
+    volumes:
+      - ./:/src
+
+  mypage-app:
+    container_name: "mypage-app"
+    build:
+      context: ./docker/php
+    depends_on:
+      - mypage-mysql
+    ports:
+      - 5173:5173
+    volumes:
+      - ./:/src
+      - /src/node_modules
+      - /src/vendor
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+
+  mypage-mysql:
+    image: mysql:8.0.33
+    command: --max_allowed_packet=32505856
+    container_name: "mypage-mysql"
+    volumes:
+      - ./docker/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=mypage
+    ports:
+      - 3306:3306
+
+  mypage-mail:
+    image: axllent/mailpit:v1.8
+    container_name: mailpit
+    ports:
+      - 8025:8025
+      - 1025:1025
+
+  mypage-redis:
+    image: redis:alpine
+    container_name: "mypage-redis"
+    ports:
+      - 16379:6379
