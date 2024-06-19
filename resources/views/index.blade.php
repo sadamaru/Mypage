@@ -10,7 +10,7 @@
         
         <title>{{ config('app.name', 'Sadamaru Portfolio') }}</title>
         
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
         <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
@@ -397,14 +397,14 @@
 
             <div class="gridder my-3">
             <div class="grid-item web wow zoomIn">
-                {{-- <div class="img-place" data-src="../assets/img/work/work-1.jpg" data-fancybox 
-                data-caption="<h5 class='fg-theme'>Sadamaru's Portfolio</h5> <p>Source Code: <a href='https://gitlab.com/dinh_ld/my-portfolio'>GitLab</a></p> <p>Demo: <a href='{{ route('index') }}'>Sadamaru's Portfolio</a></p>"> --}}
+                <div class="img-place" data-src="../assets/img/work/work-1.jpg" data-fancybox 
+                data-caption="<h5 class='fg-theme'>Sadamaru's Portfolio</h5> <p>Source Code: <a href='https://gitlab.com/dinh_ld/my-portfolio'>GitLab</a></p> <p>Demo: <a href='http://localhost:8070/'>Sadamaru's Portfolio</a></p>">
                 <img src="../assets/img/work/work-1.jpg" alt="">
                 <div class="img-caption">
                     <h5 class="fg-theme">Sadamaru's Portfolio</h5>
                     {{-- <p>Profile, portfolio</p> --}}
                 </div>
-                {{-- </div> --}}
+                </div>
             </div>
             <div class="grid-item web wordpress wow zoomIn">
                 <div class="img-place" data-src="../assets/img/work/work-2.jpg" data-fancybox 

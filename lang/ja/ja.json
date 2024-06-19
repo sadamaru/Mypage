@@ -1,0 +1,47 @@
+{
+  "=============共通項目=============": "",
+  "Email": "メールアドレス",
+  "Password": "パスワード",
+  "Save": "保存",
+
+  "=============ログイン画面==========": "",
+  "Log in": "ログイン",
+  "Remember me": "ログイン情報を保存する",
+  "Forgot your password?": "パスワードをお忘れの場合",
+  "Create new user": "新規登録",
+  "auth.failed": "メールアドレスとパスワードが一致していません。",
+
+  "=============ログアウト画面=========": "",
+  "Log Out": "ログアウト",
+
+  "=============ユーザー登録=========": "",
+  "Name":"名前",
+  "Confirm Password": "パスワードを再入力",
+  "Register": "登録",
+  "Already registered?": "既に登録済みの方",
+
+  "=============メール認証=========": "",
+  "Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn't receive the email, we will gladly send you another.": 
+  "ご登録頂きありがとうございます。メールアドレス確認のリンクを送付しましたので、メールに記載のリンクをクリックしてください。",
+  "A new verification link has been sent to the email address you provided during registration.": "メールが届いていない場合には、再送も可能です。",
+  "Resend Verification Email": "メールアドレス認証リンクの再送",
+
+  "=============パスワードリセット=========": "",
+  "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.": "登録時のメールアドレスを入力してください",
+  "Email Password Reset Link": "パスワードリセットメールの送信",
+
+  "=============ダッシュボード画面=========": "",
+  "Dashboard": "ダッシュボード",
+  "Search": "検索",
+
+  "=============プロファイル画面=========": "",
+  "Profile": "プロファイル",
+  "Profile Information": "プロファイル情報",
+  "Update your account's profile information and email address.": "プロファイル情報とメールアドレスを更新する。",
+  "Update Password": "パスワード変更",
+  "Ensure your account is using a long, random password to stay secure.": "英大文字・小文字・記号を組み合わせ、８文字以上のパスワードを設定してください。",
+  "Current Password": "現在のパスワード",
+  "New Password": "新しいパスワード",
+  "Delete Account": "アカウント削除",
+  "Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.": "アカウントが削除されると、そのすべてのリソースとデータが永久に削除されます。アカウントを削除する前に、保持したいデータや情報をダウンロードしてください。"
+}

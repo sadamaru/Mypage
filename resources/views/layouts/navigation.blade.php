@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                        <img  class="block w-auto h-12 fill-current" src="{{ asset('logo.png') }}" >
                     </a>
                 </div>
 
@@ -14,6 +14,11 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('project')" :active="request()->routeIs(['project', 'project.create'])">
+                        {{ __('Project') }}
                     </x-nav-link>
                 </div>
             </div>
