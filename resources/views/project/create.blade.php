@@ -56,27 +56,21 @@
               <x-input-error :messages="$errors->get('reward_money')" class="mt-2" />
             </div>
 
-            @php
-              $options = [
-                  [
-                      "value" => 'All The Time',
-                      "label" => 'All The Time',
-                      "selected" => true
-                  ],
-                  [
-                      "value" => 'Angles',
-                      "label" => 'Angles',
-                      "selected" => true
-                  ]
-              ];
-            @endphp
             <div class="mt-4">
               <x-input-label for="category" :value="__('Category')" />
-              <x-multiselect-choice label="Select categories" name="category" :options="$options">
-                <option value="">Select Categories</option>
-              </x-multiselect-choice>
-              {{-- <x-dropdown id="category" class="block mt-1 w-full" type="text" onblur="kanmaChange(this);" pattern="\d*" name="reward_money" :value="old('reward_money')" autofocus autocomplete="reward_money" /> --}}
-              <x-input-error :messages="$errors->get('reward_money')" class="mt-2" />
+              <label for="web" class="me-3 inline-flex items-center">
+                <input id="web" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="web">
+                <span class="ms-2 text-sm text-gray-600">{{ __('Web') }}</span>
+              </label>
+              <label for="wordpress" class="me-3 inline-flex items-center">
+                <input id="wordpress" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="wordpress">
+                <span class="ms-2 text-sm text-gray-600">{{ __('Wordpress') }}</span>
+              </label>
+              <label for="csharp" class="me-3 inline-flex items-center">
+                <input id="csharp" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="csharp">
+                <span class="ms-2 text-sm text-gray-600">{{ __('C#') }}</span>
+              </label>
+              <x-input-error :messages="$errors->get('category')" class="mt-2" />
             </div>
 
             <div class="flex items-center justify-end mt-4">
